@@ -2,7 +2,7 @@ package com.javalec.base;
 
 import java.util.Scanner;
 
-public class quiz_08_MaxvalueNPosition {
+public class Quiz_08_MaxvalueNPosition {
 	
 	public static void main(String[] args) {
 		
