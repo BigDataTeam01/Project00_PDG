@@ -3,26 +3,39 @@ package com.javalec.base;
 import java.util.Scanner;
 
 public class Main {
+
 	public static void main(String[] args) {
+		// 입력한 숫자를 가로로 구구단 출력하기 
+		// 변수 선언
+		int num = 0;
 		
-		// 숫자 삼각형에 프로그램 작성
 		
-		// Properties
-		Scanner scanner = new Scanner(System.in);
-		int step;			// 단계를 표시하기 위한 변수
-		int number = 1;		// 숫자를 표시하기 위한 변수
+		Scanner sc = new Scanner(System.in);  //  숫자를 입력 받으려면 스캐너 필요
+
+		// 입력  
+		System.out.print(" Input your number : "); //  입력 요청
+		num = sc.nextInt();		// 입력 받은 숫자를 변수에 저장 	
 		
-		// Input
-		System.out.print("몇 단계의 파라미드로 구성할까 ? : ");
-		step = scanner.nextInt();	// 단계는 입력한 숫자로 출력
 		
-		for(int i = 1; i <= step; i++) {		// 세로열 출력을 위한 반복문
-			for(int j = 1; j <= i; j++) {		// 세로열이 1일때 가로열도 1, 세로열이 2일때 가로열은2....
-												// 첫번째 줄은 숫자 하나, 두번째 줄은 숫자 2개, 세번째 줄은 숫자3개가 출력됨
-				System.out.print(String.format("%3d", number++));	// 숫자는 1씩 증가하면서 출력
+		
+		
+		
+		// 처리
+			for(int i = 1; i <= 9; i++) { // 1~9 까지 반복 출력 함
+				for(int j = num; j < (num+4); j++) { // 구구단을 출력을 할때 입력받은 숫자의 +4 를 출력하게 해주는 반복문
+		
+					
+		// 출력 
+					
+					
+				System.out.print( j + " X " + i + " = " + String.format("%2d", j*i )+ "\t");
 			}
-				System.out.println();			// 가로열 for문을 끝낸후 엔터 표시
+			System.out.println();
+				
+			
 		}
+		
+		
 		
 		
 	}
