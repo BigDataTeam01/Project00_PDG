@@ -2,7 +2,7 @@ package com.javalec.base;
 
 import java.util.Scanner;
 
-public class Quiz_02_factorial {
+public class Excercise_03_FactorialCalculator {
 	
 	
 	
